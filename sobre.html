@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      color:white;
+      overflow:hidden;
+    }
+
+    header{
+      width:100%;
+      background:#000;
+      padding:20px;
+      text-align:center;
+      position:fixed;
+      top:0;
+      z-index:10;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 20px;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    section{
+      width:100%;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .background{
+      position:absolute;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:1;
+    }
+
+    .overlay{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.65);
+      z-index:2;
+    }
+
+    .about-box{
+      position:relative;
+      z-index:3;
+      background:rgba(0,0,0,0.75);
+      padding:50px;
+      max-width:1000px;
+      border:3px solid #ffd400;
+    }
+
+    h2{
+      font-size:50px;
+      margin-bottom:30px;
+      color:#ffd400;
+    }
+
+    p{
+      font-size:22px;
+      line-height:1.8;
+      margin-bottom:20px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section>
+
+  <!-- IMAGEM DE BACKGROUND -->
+  <img class="background" src="img/theboys.jpg">
+
+  <div class="overlay"></div>
+
+  <div class="about-box">
+
+    <h2>Sobre a Série</h2>
+
+    <p>
+      The Boys acompanha um grupo de vigilantes
+      que luta contra super-heróis corruptos controlados pela poderosa empresa Vought.
+    </p>
+
+    <p>
+      Billy Butcher lidera os The Boys em uma guerra brutal
+      contra os Supes, principalmente o Capitão Pátria.
+    </p>
+
+  </div>
+
+</section>
+
+</body>
+</html>

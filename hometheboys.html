@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+    }
+
+    header{
+      width:100%;
+      background:#000;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 20px;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    section{
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px;
+      position:relative;
+    }
+
+    .background{
+      position:absolute;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .overlay{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.6);
+    }
+
+    .content{
+      position:relative;
+      z-index:2;
+      text-align:center;
+      max-width:900px;
+    }
+
+    h1{
+      font-size:60px;
+      margin-bottom:30px;
+    }
+
+    p{
+      font-size:22px;
+      line-height:1.6;
+    }
+
+    .characters{
+      margin-top:50px;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .characters img{
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      border:5px solid white;
+      object-fit:cover;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section>
+
+  <img class="background" src="img/los ninos.jpg">
+
+  <div class="overlay"></div>
+
+  <div class="content">
+
+    <h1>Billy Butcher protagonista de THE BOYS</h1>
+
+    <p>
+      Billy Butcher é o protagonista e anti-herói da série The Boys.
+      Ele lidera um grupo de vigilantes contra super-heróis corruptos.
+    </p>
+
+    <div class="characters">
+      <img src="img/brutats.jpg">
+      <img src="img/bretets.jpg">
+      <img src="img/brutocs.jpg">
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
