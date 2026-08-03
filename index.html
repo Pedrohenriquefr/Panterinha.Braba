@@ -1,52 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O MIBR JOGA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #112080;
+      min-height: 100vh;
+      font-family: 'Times New Roman', Times, serif;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .nav-left a,
+    .nav-right a {
+      color: #ffffff;
+      text-decoration: underline;
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0 8px;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px 40px;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .logo-container {
+      margin-bottom: 40px;
+    }
+
+    .logo-container img {
+      width: 180px;
+      height: auto;
+      display: block;
+    }
+
+    .teams {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    .team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .team img {
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .team.valorant img {
+      width: 200px;
+      height: 160px;
+    }
+
+    .team.r6 img {
+      width: 380px;
+      height: 230px;
+    }
+
+    .team.cs2 img {
+      width: 190px;
+      height: 130px;
+    }
+
+    .team-label {
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .team.r6 .team-label {
+      font-size: 28px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .teams {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .team.r6 img {
+        width: 300px;
+        height: auto;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
-<body class="body">
-    <style>
+<body>
+  <header>
+    <div class="nav-left">
+      <a href="#">Sobre</a>
+    </div>
+    <div class="nav-right">
+      <a href="#">Login</a>
+      <a href="#">cadastro</a>
+    </div>
+  </header>
 
-.body {
-    background-color: #BBB7AE
-}
+  <main>
+    <h1>O MIBR JOGA</h1>
+    
+    <div class="logo-container">
+      <img src="mibr_logo.png" alt="MIBR Logo">
+    </div>
 
-.titulo {
-color: #000000;
-font-family: patrick hand;
-font-weight: 32px;
-font-size: 96px;
+    <div class="teams">
+      <div class="team valorant">
+        <img src="valorant.png" alt="MIBR Valorant">
+        <div class="team-label">VALORANT</div>
+      </div>
 
-}
+      <div class="team r6">
+        <img src="r6.png" alt="MIBR Rainbow Six">
+        <div class="team-label">Rainbow six</div>
+      </div>
 
-.texto {
-color: #000000;
-font-family: patrick hand;
-font-size: 40px;
-contain: 200px;
-}
-
-
-.card1{
-        margin: 60px;
-        border-radius: 10px;
-        background-color: #4D4D4D;
-}
-    </style>
-
-    <div class="conteiner">
-        <div class="parte1">
-            
-            <h1 class="titulo">Billy Bruto</h1>
-            <h2 class="texto">é o protagonista e anti-herói da série de quadrinhos e TV The Boys.
-
-                Ele é um ex-agente da CIA britânico, implacável e
-                carismático, que lidera um grupo de vigilantes com o objetivo de chantagear, torturar e matar super-heróis corrompidos, especialmente o Capitão Pátria (Homelander), a quem culpa pela morte de sua esposa, Becca. </h2>
-                <img src="img/homelander-1.jpg" class="card1">
-            </div>
+      <div class="team cs2">
+        <img src="cs2.png" alt="MIBR CS2">
+        <div class="team-label">CS2</div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
